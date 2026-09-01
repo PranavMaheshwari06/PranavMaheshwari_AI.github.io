@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="color-scheme" content="dark" />
+
+    <!-- Tab title and description are overwritten from content.js -->
+
+    <title>Portfolio</title>
+
+    <meta name="description" content="" data-meta-description />
+
+    <!-- Link-preview cards (LinkedIn / X / Slack). Filled from content.js. -->
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:title" content="" data-og-title />
+
+    <meta property="og:description" content="" data-og-description />
+
+    <meta property="og:image" content="" data-og-image />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+
+      rel="stylesheet"
+
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="content.js" defer></script>
+
+    <script src="main.js" defer></script>
+
+  </head>
+
+  <body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Depth layers: drifting colour, film grain, pointer light. Decorative. -->
+
+    <div class="ambient" aria-hidden="true">
+
+      <span class="ambient__blob ambient__blob--a"></span>
+
+      <span class="ambient__blob ambient__blob--b"></span>
+
+      <span class="ambient__blob ambient__blob--c"></span>
+
+    </div>
+
+    <div class="grain" aria-hidden="true"></div>
+
+    <div class="cursor-glow" data-cursor-glow aria-hidden="true"></div>
+
+    <div class="cursor-ring" data-cursor-ring aria-hidden="true"></div>
+
+    <!-- ================================ NAV ================================ -->
+
+    <header class="nav" data-nav>
+
+      <div class="container nav__inner">
+
+        <a class="monogram" href="#home" data-monogram aria-label="Back to top"></a>
+
+        <button
+
+          class="nav__toggle"
+
+          data-nav-toggle
+
+          type="button"
+
+          aria-expanded="false"
+
+          aria-controls="nav-menu"
+
+          aria-label="Open menu"
+
+        >
+
+          <span class="nav__toggle-bar"></span>
+
+          <span class="nav__toggle-bar"></span>
+
+        </button>
+
+        <nav class="nav__menu" id="nav-menu" data-nav-menu aria-label="Primary">
+
+          <ul class="nav__links" data-nav-links></ul>
+
+          <div data-resume-slot></div>
+
+        </nav>
+
+      </div>
+
+      <span class="nav__progress" data-progress aria-hidden="true"></span>
+
+    </header>
+
+    <main id="main">
+
+      <!-- =============================== HERO =============================== -->
+
+      <section class="hero" id="home" tabindex="-1">
+
+        <div class="container hero__inner">
+
+          <p class="chip" data-availability>
+
+            <span class="chip__dot" aria-hidden="true"></span>
+
+            <span class="chip__text"></span>
+
+          </p>
+
+          <p class="hero__eyebrow" data-hero-role></p>
+
+          <h1 class="hero__name" data-hero-name></h1>
+
+          <p class="hero__rotator" data-rotator>
+
+            <span class="hero__rotator-text" data-rotator-text aria-hidden="true"></span>
+
+            <span class="hero__caret" aria-hidden="true"></span>
+
+          </p>
+
+          <p class="hero__punchline" data-hero-punchline></p>
+
+          <dl class="metrics" data-metrics></dl>
+
+          <a class="scroll-cue" href="#about" data-scroll-cue>
+
+            <span class="scroll-cue__label"></span>
+
+            <span class="scroll-cue__line" aria-hidden="true"></span>
+
+          </a>
+
+        </div>
+
+      </section>
+
+      <!-- ============================== ABOUT =============================== -->
+
+      <section class="section" id="about" aria-labelledby="about-heading">
+
+        <div class="container section__grid">
+
+          <div class="section__head" data-reveal>
+
+            <p class="section__index" aria-hidden="true"></p>
+
+            <h2 class="section__title" id="about-heading" data-about-heading></h2>
+
+          </div>
+
+          <div class="section__body">
+
+            <div class="about__bio" data-about-bio data-reveal></div>
+
+            <div class="about__skills" data-about-skills></div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Slow keyword band. Removed automatically if about.marquee is empty. -->
+
+      <div class="marquee" data-marquee aria-hidden="true">
+
+        <div class="marquee__track" data-marquee-track></div>
+
+      </div>
+
+      <!-- ============================== CAREER ============================== -->
+
+      <section class="section" id="career" aria-labelledby="career-heading" data-career-section>
+
+        <div class="container section__grid">
+
+          <div class="section__head" data-reveal>
+
+            <p class="section__index" aria-hidden="true"></p>
+
+            <h2 class="section__title" id="career-heading" data-career-heading></h2>
+
+            <p class="section__sub" data-career-sub></p>
+
+          </div>
+
+          <div class="section__body">
+
+            <div class="timeline-wrap">
+
+              <span class="timeline__progress" data-timeline-progress aria-hidden="true"></span>
+
+              <ol class="timeline" data-timeline></ol>
+
+            </div>
+
+            <div class="education" data-education></div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- =============================== WORK =============================== -->
+
+      <section class="section" id="work" aria-labelledby="work-heading" data-work-section>
+
+        <div class="container section__grid">
+
+          <div class="section__head" data-reveal>
+
+            <p class="section__index" aria-hidden="true"></p>
+
+            <h2 class="section__title" id="work-heading" data-work-heading></h2>
+
+            <p class="section__sub" data-work-sub></p>
+
+          </div>
+
+          <div class="section__body">
+
+            <div class="work__grid" data-work-grid></div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ============================= CONTACT ============================== -->
+
+      <section class="section section--contact" id="contact" aria-labelledby="contact-heading">
+
+        <div class="container section__grid">
+
+          <div class="section__head" data-reveal>
+
+            <p class="section__index" aria-hidden="true"></p>
+
+            <h2 class="section__title" id="contact-heading" data-contact-heading></h2>
+
+          </div>
+
+          <div class="section__body">
+
+            <p class="contact__cta" data-contact-cta data-reveal></p>
+
+            <p class="contact__blurb" data-contact-blurb data-reveal></p>
+
+            <div class="contact__mail" data-reveal>
+
+              <a class="contact__email" data-contact-email></a>
+
+              <button class="copy-btn" type="button" data-copy-email>
+
+                <span class="copy-btn__label">Copy</span>
+
+              </button>
+
+            </div>
+
+            <ul class="contact__links" data-contact-links></ul>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- ============================== FOOTER =============================== -->
+
+    <footer class="footer">
+
+      <div class="container footer__inner">
+
+        <div>
+
+          <p class="footer__copy" data-footer-copy></p>
+
+          <p class="footer__note" data-footer-note></p>
+
+        </div>
+
+        <div class="footer__meta">
+
+          <p class="clock" data-clock></p>
+
+          <a class="to-top" href="#home">Back to top</a>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+  </body>
+
+</html>

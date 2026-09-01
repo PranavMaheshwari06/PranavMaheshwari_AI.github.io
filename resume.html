@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 12mm 15mm 12mm 15mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+      font-size: 9.5pt;
+      line-height: 1.35;
+      color: #1a1a1a;
+      background: #fff;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 12px;
+      border-bottom: 1.5px solid #222;
+      padding-bottom: 8px;
+    }
+
+    .name {
+      font-size: 20pt;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #111;
+    }
+
+    .headline {
+      font-size: 10pt;
+      font-weight: 600;
+      color: #333;
+      margin-top: 2px;
+    }
+
+    .contact-info {
+      font-size: 8.5pt;
+      color: #444;
+      margin-top: 4px;
+    }
+
+    .contact-info a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+
+    .section {
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: 10.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #111;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 2px;
+      margin-bottom: 5px;
+      letter-spacing: 0.5px;
+    }
+
+    .summary {
+      font-size: 9pt;
+      text-align: justify;
+      line-height: 1.35;
+    }
+
+    .skills-row {
+      font-size: 9pt;
+      margin-bottom: 3px;
+      line-height: 1.3;
+    }
+
+    .skills-label {
+      font-weight: 700;
+      color: #222;
+    }
+
+    .item {
+      margin-bottom: 7px;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .item-title {
+      font-weight: 700;
+      font-size: 9.5pt;
+      color: #111;
+    }
+
+    .item-title span {
+      font-weight: 600;
+      color: #333;
+    }
+
+    .item-date {
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: #555;
+      text-align: right;
+    }
+
+    .item-sub {
+      display: flex;
+      justify-content: space-between;
+      font-size: 8.5pt;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 2px;
+    }
+
+    ul.points {
+      margin-left: 14px;
+      margin-top: 2px;
+    }
+
+    ul.points li {
+      font-size: 8.8pt;
+      margin-bottom: 2px;
+      line-height: 1.3;
+    }
+
+    .grid-2 {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .grid-2>div {
+      flex: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="name">Pranav Maheshwari</div>
+    <div class="headline">AI &amp; Machine Learning Engineer | Physics-Informed AI &amp; LLMs</div>
+    <div class="contact-info">
+      pranavmaheshwari0601@gmail.com &bull; +49 15510237366 &bull; Passau, Germany<br>
+      Status: EU Working Student Visa (Full Work Eligibility in Germany)<br>
+      <a href="https://www.linkedin.com/in/pranavmaheshwari0617/">linkedin.com/in/pranavmaheshwari0617</a> &bull;
+      <a href="https://github.com/pranavmaheshwari">github.com/pranavmaheshwari</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <div class="summary">
+      Machine Learning &amp; AI Engineer pursuing M.Sc. in AI Engineering at Universit&auml;t Passau, currently
+      contributing to PhysicsNeMo surrogate modeling pipelines at Mercedes-Benz AG. Experienced in building
+      physics-informed neural networks (PINNs), LLM applications, CUDA-accelerated deep learning pipelines, and
+      production MLOps data workflows using PyTorch, SQL, and Zarr. Adept at translating complex engineering simulations
+      into fast, scalable AI models.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-row"><span class="skills-label">Programming Languages:</span> Python, C++, SQL, JavaScript
+      (React.js), Bash</div>
+    <div class="skills-row"><span class="skills-label">AI / ML Frameworks:</span> PyTorch, PhysicsNeMo, PINNs
+      (Physics-Informed Neural Networks), OpenCV, YOLOv3/YOLOv8, LLMs &amp; Transformers, CUDA Acceleration,
+      Scikit-Learn</div>
+    <div class="skills-row"><span class="skills-label">Data Engineering Tools:</span> Zarr Data Format, Mesh Processing,
+      Tableau, Git, REST APIs, Docker, PostgreSQL</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Professional Experience</div>
+
+    <div class="item">
+      <div class="item-header">
+        <div class="item-title">Working Student &mdash; Physics-Informed AI &bull; <span>Mercedes-Benz AG</span></div>
+        <div class="item-date">08/2025 &ndash; Present</div>
+      </div>
+      <div class="item-sub">
+        <div>Sindelfingen, Germany</div>
+      </div>
+      <ul class="points">
+        <li>Researched and benchmarked PhysicsNeMo surrogate AI models across complex engineering use cases, evaluating
+          linear elasticity models for real-time stress/displacement field predictions.</li>
+        <li>Engineered end-to-end data training pipelines, converting simulation data into PhysicsNeMo-trainable
+          datasets using mesh processing, geometry-field alignment, and Zarr structured storage.</li>
+        <li>Automated physics data preprocessing and Curator-style workflows, accelerating surrogate model iteration
+          speed for engineering design optimization.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div class="item-title">Market Research &amp; Forecasting Intern &bull; <span>EventCart</span></div>
+        <div class="item-date">12/2022 &ndash; 03/2023</div>
+      </div>
+      <div class="item-sub">
+        <div>Noida, India</div>
+      </div>
+      <ul class="points">
+        <li>Architected SQL-based data workflows to preprocess 100K+ market and customer records for forecasting models.
+        </li>
+        <li>Developed predictive machine learning models to identify key market trends and consumer behavior patterns,
+          boosting forecast precision.</li>
+        <li>Designed interactive Tableau reporting dashboards to visualize model metrics and business insights for
+          executive teams.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div class="item-title">Product Engineer &bull; <span>Highradius</span></div>
+        <div class="item-date">01/2022 &ndash; 04/2022</div>
+      </div>
+      <div class="item-sub">
+        <div>Delhi, India</div>
+      </div>
+      <ul class="points">
+        <li>Deployed an AI-enabled B2B invoicing platform with automated invoice processing pipelines, optimizing data
+          extraction accuracy.</li>
+        <li>Integrated RESTful APIs to automate invoice validation and decision-making workflows, reducing manual
+          processing time by 40%.</li>
+        <li>Built a responsive React.js web dashboard featuring real-time data editing, advanced search, and PDF
+          generation tools.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Key Technical Projects</div>
+    <div class="item">
+      <div class="item-header">
+        <div class="item-title">Real-Time Vehicle Collision Detection System</div>
+        <div class="item-date"><a href="https://github.com/pranavmaheshwari/collision-detection"
+            style="color:#0056b3; text-decoration:none; font-size:8.5pt;">github.com/pranavmaheshwari/collision-detection</a>
+        </div>
+      </div>
+      <div class="item-sub">
+        <div>PyTorch, YOLOv3, OpenCV, CUDA, Python, REST APIs</div>
+      </div>
+      <ul class="points">
+        <li>Engineered a real-time object tracking and collision detection system using YOLOv3 and OpenCV with CUDA GPU
+          acceleration.</li>
+        <li>Implemented automated instant SMS/email notification APIs for emergency alerts, reducing detection-to-alert
+          latency under 200ms.</li>
+        <li>Authored research paper detailing real-time multi-vehicle tracking architecture and GPU memory optimization
+          benchmarks.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="item">
+      <div class="item-header">
+        <div class="item-title">Universit&auml;t Passau &bull; <span>Master of Science in Artificial Intelligence
+            Engineering</span></div>
+        <div class="item-date">10/2023 &ndash; Present</div>
+      </div>
+      <div class="item-sub">
+        <div>Passau, Germany</div>
+      </div>
+      <div style="font-size: 8.5pt; color: #444; margin-top: 1px;">Focus on Deep Learning Architectures,
+        Physics-Informed Neural Networks (PINNs), LLMs, and Advanced Technical Pipelines.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div class="item-title">SRM Institute of Science and Technology &bull; <span>B.Tech in Computer Science &amp;
+            Engineering</span></div>
+        <div class="item-date">07/2019 &ndash; 05/2023</div>
+      </div>
+      <div class="item-sub">
+        <div>India</div>
+      </div>
+      <div style="font-size: 8.5pt; color: #444; margin-top: 1px;">Graduated with Computer Science specialization.
+        Relevant coursework: Data Structures, Algorithms, AI, Database Systems.</div>
+    </div>
+  </div>
+
+  <div class="section grid-2">
+    <div>
+      <div class="section-title">Certifications</div>
+      <ul class="points">
+        <li><strong>Google Data Analytics Professional Certificate</strong> (Coursera / Google, 2023)</li>
+        <li><strong>The Complete Python Pro Bootcamp</strong> (Udemy, 2023)</li>
+      </ul>
+    </div>
+    <div>
+      <div class="section-title">Languages</div>
+      <ul class="points">
+        <li><strong>English:</strong> Full Professional / C1</li>
+        <li><strong>German:</strong> Working Knowledge / A2-B1</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+
+</html>
