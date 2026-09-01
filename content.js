@@ -244,7 +244,7 @@ window.CONTENT = {
         links: [
           {
             label: "GitHub",
-            href: "https://github.com/pranavmaheshwari/collision-detection",
+            href: "https://github.com/PranavMaheshwari06/collision-detection",
           },
         ],
       },
@@ -272,7 +272,7 @@ window.CONTENT = {
         links: [
           {
             label: "GitHub",
-            href: "https://github.com/pranavmaheshwari",
+            href: "https://github.com/PranavMaheshwari06",
           },
         ],
       },
@@ -303,8 +303,8 @@ window.CONTENT = {
       },
       {
         label: "GitHub",
-        handle: "@pranavmaheshwari",
-        href: "https://github.com/pranavmaheshwari",
+        handle: "@PranavMaheshwari06",
+        href: "https://github.com/PranavMaheshwari06",
         icon: "github",
       },
       {
