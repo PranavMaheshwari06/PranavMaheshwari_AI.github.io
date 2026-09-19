@@ -760,7 +760,7 @@
     );
   }
 
-  /** Typewriter that cycles through hero.rotating. */
+  /** Show complete hero phrases, with a quick fade on each change. */
   function initRotator() {
     var phrases =
       (C.hero && C.hero.rotating) || [];
@@ -781,47 +781,23 @@
       phrases.join(". ")
     );
 
-    if (reduceMotion) {
-      out.textContent = phrases[0];
-      return;
-    }
+    out.textContent = phrases[0];
+
+    if (reduceMotion || phrases.length === 1) return;
 
     var i = 0;
-    var pos = 0;
-    var deleting = false;
 
-    (function tick() {
-      var full = phrases[i];
+    setInterval(function () {
+      i = (i + 1) % phrases.length;
+      out.textContent = phrases[i];
 
-      pos += deleting ? -1 : 1;
-
-      out.textContent =
-        full.slice(0, pos);
-
-      var delay =
-        deleting ? 34 : 62;
-
-      if (
-        !deleting &&
-        pos === full.length
-      ) {
-        deleting = true;
-        delay = 1800;
-      } else if (
-        deleting &&
-        pos === 0
-      ) {
-        deleting = false;
-
-        i =
-          (i + 1) %
-          phrases.length;
-
-        delay = 380;
+      if (out.animate) {
+        out.animate(
+          [{ opacity: 0 }, { opacity: 1 }],
+          { duration: 150, easing: "ease-out" }
+        );
       }
-
-      setTimeout(tick, delay);
-    })();
+    }, 3000);
   }
 
   /** Mobile menu toggle + sticky-nav border. */
